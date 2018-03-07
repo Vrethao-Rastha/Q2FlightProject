@@ -18,11 +18,10 @@
     <h1 class="col-md-8 nav-trips offset-md-1">Your Trips</h1>
   </div>
     <% for(let i=0;i<trip.length;i++){ %>
-      <p><%= trip[i].title %></p>
-      <p><%= trip[i].description %></p>
-      <% for(let i=0;i < flight.length;i++){ %>
-       <p><%= flight[i].destination %></p>
-      <% } %>
+      <p class="trip-bin">TRIP TITLE:<%= trip[i].title %></p>
+      <p class="trip-bin">TRIP DESC:<%= trip[i].description %></p>
+      <p>FLIGHT START: <%= trip[i].start %></p>
+       <p class="trip-bin">FLIGHT DESTINATION: <%= trip[i].destination %></p>
       <% } %>
     </div>
 <h3 class="nav-trips">Add a new trip</h3>
